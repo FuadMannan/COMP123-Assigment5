@@ -24,5 +24,10 @@ namespace Assignment5
         {
             InitializeComponent();
         }
+
+        private void UnitsLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
