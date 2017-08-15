@@ -11,16 +11,16 @@ using System.Windows.Forms;
 /*
  * Name: Fuad Mannan
  * ID: 300923068
- * Date: August 4, 2017
+ * Date: August 15, 2017
  * Description: BMI Calculator for assignment 5
- * Version 0.1: Created project
+ * Version 0.2: Modified layout
  */
 
 namespace Assignment5
 {
-    public partial class CalculatorForm : Form
+    public partial class BMICalculatorForm : Form
     {
-        public CalculatorForm()
+        public BMICalculatorForm()
         {
             InitializeComponent();
         }
