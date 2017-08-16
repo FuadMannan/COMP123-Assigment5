@@ -14,7 +14,7 @@ using System.Windows.Forms;
  * ID: 300923068
  * Date: August 15, 2017
  * Description: BMI Calculator for assignment 5
- * Version 0.5: Added public property to get height/weight value, implementing BMI scale message
+ * Version 0.6: Added clear form method
  */
 
 namespace Assignment5
@@ -104,6 +104,15 @@ namespace Assignment5
             BMIScaleTextBox.Text = scaleMessage;
         }
 
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            HeightTextBox.Text = "";
+            WeightTextBox.Text = "";
+            BMIResultsTextBox.Text = "";
+            BMIScaleTextBox.Text = "";
+            
+        }
+
         private void RadioButton_Click(object sender, EventArgs e)
         {
             this.IsMetric = this.MetricRadioButton.Checked;
@@ -122,5 +131,7 @@ namespace Assignment5
             }
             return 0;
         }
+
+
     }
 }
