@@ -181,6 +181,7 @@
             this.HeightTextBox.Size = new System.Drawing.Size(134, 38);
             this.HeightTextBox.TabIndex = 5;
             this.HeightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.HeightTextBox.TextChanged += new System.EventHandler(this.TextBox_TextChanged);
             // 
             // WeightLabel
             // 

@@ -14,7 +14,7 @@ using System.Windows.Forms;
  * ID: 300923068
  * Date: August 15, 2017
  * Description: BMI Calculator for assignment 5
- * Version 0.6: Added clear form method
+ * Version 0.7: Validation
  */
 
 namespace Assignment5
@@ -116,6 +116,25 @@ namespace Assignment5
         private void RadioButton_Click(object sender, EventArgs e)
         {
             this.IsMetric = this.MetricRadioButton.Checked;
+        }
+
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
+            TextBox box = sender as TextBox;
+            if (System.Text.RegularExpressions.Regex.IsMatch(box.Text, @"(?:\\d*\\.)?\\d+"))
+            {
+                MessageBox.Show("Numbers only please!");
+
+            }
+            try
+            {
+                Convert.ToDouble(box.Text);
+            }
+            catch (Exception exception)
+            {
+                Debug.WriteLine("Oops - Something Went Wrong");
+                Debug.WriteLine(exception);
+            }
         }
 
         private double _convertValues(string values)
