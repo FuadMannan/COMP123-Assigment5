@@ -76,7 +76,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(280, 390);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(280, 418);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // WeightTextBox
@@ -167,12 +167,12 @@
             this.BMIScaleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.BMIScaleTextBox, 2);
             this.BMIScaleTextBox.Enabled = false;
+            this.BMIScaleTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BMIScaleTextBox.Location = new System.Drawing.Point(3, 219);
             this.BMIScaleTextBox.Multiline = true;
             this.BMIScaleTextBox.Name = "BMIScaleTextBox";
-            this.BMIScaleTextBox.Size = new System.Drawing.Size(274, 43);
+            this.BMIScaleTextBox.Size = new System.Drawing.Size(274, 94);
             this.BMIScaleTextBox.TabIndex = 9;
-            this.BMIScaleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // HeightTextBox
             // 
@@ -218,7 +218,7 @@
             this.CalculateButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CalculateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CalculateButton.Location = new System.Drawing.Point(3, 339);
+            this.CalculateButton.Location = new System.Drawing.Point(3, 367);
             this.CalculateButton.Name = "CalculateButton";
             this.CalculateButton.Size = new System.Drawing.Size(134, 48);
             this.CalculateButton.TabIndex = 10;
@@ -231,7 +231,7 @@
             this.ClearButton.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(143, 339);
+            this.ClearButton.Location = new System.Drawing.Point(143, 367);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(134, 48);
             this.ClearButton.TabIndex = 11;
@@ -242,7 +242,7 @@
             // 
             this.BMIProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.SetColumnSpan(this.BMIProgressBar, 2);
-            this.BMIProgressBar.Location = new System.Drawing.Point(3, 276);
+            this.BMIProgressBar.Location = new System.Drawing.Point(3, 327);
             this.BMIProgressBar.Name = "BMIProgressBar";
             this.BMIProgressBar.Size = new System.Drawing.Size(274, 23);
             this.BMIProgressBar.TabIndex = 12;
