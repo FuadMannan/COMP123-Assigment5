@@ -160,6 +160,7 @@
             this.BMIResultsTextBox.ReadOnly = true;
             this.BMIResultsTextBox.Size = new System.Drawing.Size(274, 38);
             this.BMIResultsTextBox.TabIndex = 8;
+            this.BMIResultsTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // BMIScaleTextBox
             // 
@@ -171,6 +172,7 @@
             this.BMIScaleTextBox.Name = "BMIScaleTextBox";
             this.BMIScaleTextBox.Size = new System.Drawing.Size(274, 43);
             this.BMIScaleTextBox.TabIndex = 9;
+            this.BMIScaleTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // HeightTextBox
             // 
