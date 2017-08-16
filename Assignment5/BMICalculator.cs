@@ -14,7 +14,7 @@ using System.Windows.Forms;
  * ID: 300923068
  * Date: August 15, 2017
  * Description: BMI Calculator for assignment 5
- * Version 0.7: Validation
+ * Version 0.7: Tried Validation
  */
 
 namespace Assignment5
@@ -118,25 +118,6 @@ namespace Assignment5
             this.IsMetric = this.MetricRadioButton.Checked;
         }
 
-        private void TextBox_TextChanged(object sender, EventArgs e)
-        {
-            TextBox box = sender as TextBox;
-            if (System.Text.RegularExpressions.Regex.IsMatch(box.Text, @"(?:\\d*\\.)?\\d+"))
-            {
-                MessageBox.Show("Numbers only please!");
-
-            }
-            try
-            {
-                Convert.ToDouble(box.Text);
-            }
-            catch (Exception exception)
-            {
-                Debug.WriteLine("Oops - Something Went Wrong");
-                Debug.WriteLine(exception);
-            }
-        }
-
         private double _convertValues(string values)
         {
             try
@@ -151,6 +132,9 @@ namespace Assignment5
             return 0;
         }
 
+        private void TextBox_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }
